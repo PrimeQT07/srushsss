@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- Floating Hearts -->
+  <div class="hearts"></div>
+
+  <div class="container">
+
+    <img id="animeMain" src="hug.gif" class="main-anime">
+
+    <div class="card">
+      <p id="message"></p>
+    </div>
+
+    <div class="buttons">
+      <button id="yesBtn">YES</button>
+      <button id="noBtn">NO</button>
+    </div>
+
+    <div class="letters">
+      <button class="letter" data-day="rose">🌹 Rose Day</button>
+      <button class="letter" data-day="propose">💍 Propose Day</button>
+      <button class="letter" data-day="chocolate">🍫 Chocolate Day</button>
+      <button class="letter" data-day="teddy">🧸 Teddy Day</button>
+      <button class="letter" data-day="promise">🤝 Promise Day</button>
+      <button class="letter" data-day="hug">🤗 Hug Day</button>
+      <button class="letter" data-day="kiss">💋 Kiss Day</button>
+      <button class="letter" data-day="valentine">❤️ Valentine’s Day</button>
+    </div>
+
+  </div>
+
+  <!-- Letter Overlay -->
+  <div id="overlay" class="overlay">
+    <div class="letter-card">
+      <img id="letterGif" class="letter-gif">
+      <h2 id="letterTitle"></h2>
+      <p id="letterText"></p>
+      <button id="closeBtn">Close</button>
+    </div>
+  </div>
+
+  <!-- Music -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

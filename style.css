@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("bg.gif") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  text-align: center;
+  backdrop-filter: blur(15px);
+}
+
+.main-anime {
+  width: 180px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 30px rgba(255,255,255,0.2);
+}
+
+.card {
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 20px;
+  width: 320px;
+  color: white;
+  margin: auto;
+  backdrop-filter: blur(10px);
+}
+
+#message {
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: rgba(255,192,203,0.5);
+}
+
+.letters {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 350px;
+  color: white;
+  animation: fadeIn 0.5s ease;
+}
+
+.letter-gif {
+  width: 200px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:scale(0.9);}
+  to {opacity:1; transform:scale(1);}
+}
+
+/* Floating hearts */
+.hearts::before {
+  content: "❤️ 💖 💕 💘 💞";
+  position: fixed;
+  top: -10%;
+  left: 50%;
+  font-size: 24px;
+  animation: float 12s linear infinite;
+}
+
+@keyframes float {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(120vh);}
+}
